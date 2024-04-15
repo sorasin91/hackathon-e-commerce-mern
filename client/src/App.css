@@ -1,0 +1,168 @@
+/* header css */
+
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-num {
+  position: relative;
+  margin-left: 20px;
+}
+
+.cart-items {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar {
+  padding: 1rem;
+}
+
+.ecom {
+  margin: 0;
+  font-weight: 700;
+  color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-link {
+  color: #333;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+  position: absolute;
+  float: none;
+  display: none;
+  min-width: auto;
+  margin-top: 0;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+}
+
+.navbar-nav .nav-item {
+  position: relative; /* Set parent nav-item position to relative */
+}
+
+/* product list css */
+.prdt-list {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.filter-btn {
+  margin-bottom: 20px;
+}
+
+.item-card {
+  list-style: none;
+  padding: 0;
+}
+
+.buy-now-btn {
+  width: 100px;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* product item css */
+.product-card {
+  display: inline-block;
+  justify-content: center;
+  width: calc(33.33% - 20px);
+  margin: 0 10px 20px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-details h3 {
+  font-weight: 700;
+}
+
+.product-details p {
+  font-weight: 300;
+}
+
+.product-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.product-details button:last-child {
+  margin-left: 10px;
+}
+
+.item-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* media queries for responsive*/
+
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-image {
+    margin: auto;
+  }
+
+  .filter-btn {
+    flex-direction: column;
+  }
+
+  .navbar-items {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
